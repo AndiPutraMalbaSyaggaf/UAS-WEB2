@@ -370,14 +370,18 @@ Tambahkan screenshot aplikasi berikut:
 - Login
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f0b1891-1c71-42e7-b1e5-f7fb0b7fbe4e" />
 
+
 - Dashboard
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3870d08c-c2c8-4294-817f-cb38d8c46b79" />
 
+
 - Data Barang
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d49f998a-b454-4192-9aa9-bf7969a78cac" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/73aaa801-7a6d-4d40-b049-0167d20ad93c" />
+
 
 - Data Kategori
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74b1e941-8561-4404-92dc-3402ee507401" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec32498b-f9bd-4743-8b4f-43cbcf8d37e5" />
+
 
 - Data Supplier
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/740b91e8-b5cb-4d30-bb44-ada18c4862e1" />
