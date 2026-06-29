@@ -219,7 +219,7 @@ Menggunakan
 kemudian akses
 
 ```
-http://localhost/frontend-spa/
+http://localhost/uas_web2/frontend-spa
 ```
 
 ---
