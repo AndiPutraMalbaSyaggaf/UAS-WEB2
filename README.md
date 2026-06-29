@@ -215,10 +215,6 @@ frontend-spa
 
 Menggunakan
 
-- Live Server VS Code
-
-atau
-
 - XAMPP
 
 kemudian akses
