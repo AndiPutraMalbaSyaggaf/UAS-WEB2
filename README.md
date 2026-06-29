@@ -382,12 +382,10 @@ Nama : **Andi Putra Malba Syaggaf**
 
 Program Studi : **Teknik Informatika**
 
-Universitas : **(Isi Nama Universitas Anda)**
+Universitas : **Universitas Pelita Bangsa**
 
 Tahun : **2026**
 
+link video : ****
+
 ---
-
-# 📄 Lisensi
-
-Project ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Web dan hanya digunakan untuk keperluan akademik.
