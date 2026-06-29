@@ -1,0 +1,53 @@
+CRITICAL - 2026-06-23 13:33:39 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "login""
+[Method: GET, Route: api/login%22]
+in SYSTEMPATH\Router\Router.php on line 766.
+ 1 SYSTEMPATH\Router\Router.php(217): CodeIgniter\Router\Router->checkDisallowedChars('api/login"')
+ 2 SYSTEMPATH\CodeIgniter.php(852): CodeIgniter\Router\Router->handle('api/login"')
+ 3 SYSTEMPATH\CodeIgniter.php(464): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-23 19:56:34 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: api/kategori]
+in SYSTEMPATH\BaseModel.php on line 1876.
+ 1 SYSTEMPATH\BaseModel.php(1876): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(865): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Controllers\KategoriController.php(27): CodeIgniter\Model->insert([])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KategoriController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-23 19:56:34 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: api/kategori]
+in SYSTEMPATH\BaseModel.php on line 1876.
+ 1 SYSTEMPATH\BaseModel.php(1876): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(865): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Controllers\KategoriController.php(27): CodeIgniter\Model->insert([])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KategoriController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-23 19:56:51 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: api/kategori]
+in SYSTEMPATH\BaseModel.php on line 1876.
+ 1 SYSTEMPATH\BaseModel.php(1876): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(865): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Controllers\KategoriController.php(27): CodeIgniter\Model->insert([])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KategoriController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')

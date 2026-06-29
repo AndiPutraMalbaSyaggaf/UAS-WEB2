@@ -1,0 +1,592 @@
+ERROR - 2026-06-28 16:52:04 --> Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'9514eb5bd13d0ae30dcd8668fbd4cb324ae0569c2875a415233f2dc37cb6c8bb\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'9514eb5bd13d0ae30dcd8668fbd4cb324ae0569c2875a415233f2dc37cb6c8bb\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'9514eb5bd13d0ae30dcd8668fbd4cb324ae0569c2875a415233f2dc37cb6c8bb\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:52:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:52:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'9514eb5bd13d0ae30dcd8668fbd4cb324ae0569c2875a415233f2dc37cb6c8bb\'
+WHERE `users`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'9514eb5bd13d0ae30dcd8668fbd4cb324ae0569c2875a415233f2dc37cb6c8bb\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:52:04 --> [Caused by] mysqli_sql_exception: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'9514eb5bd13d0ae30dcd8668fbd4cb324ae0569c2875a415233f2dc37cb6c8bb\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'9514eb5bd13d0ae30dcd8668fbd4cb324ae0569c2875a415233f2dc37cb6c8bb\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'9514eb5bd13d0ae30dcd8668fbd4cb324ae0569c2875a415233f2dc37cb6c8bb\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+ERROR - 2026-06-28 16:52:08 --> Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'30853b0e6f34c53639da62def607be0120736ac2c20bac1f579c25870406e668\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'30853b0e6f34c53639da62def607be0120736ac2c20bac1f579c25870406e668\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'30853b0e6f34c53639da62def607be0120736ac2c20bac1f579c25870406e668\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:52:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:52:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'30853b0e6f34c53639da62def607be0120736ac2c20bac1f579c25870406e668\'
+WHERE `users`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'30853b0e6f34c53639da62def607be0120736ac2c20bac1f579c25870406e668\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:52:08 --> [Caused by] mysqli_sql_exception: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'30853b0e6f34c53639da62def607be0120736ac2c20bac1f579c25870406e668\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'30853b0e6f34c53639da62def607be0120736ac2c20bac1f579c25870406e668\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'30853b0e6f34c53639da62def607be0120736ac2c20bac1f579c25870406e668\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+ERROR - 2026-06-28 16:52:45 --> Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'5d41514857a6157c52c4f204d190035ae1b55c2696ef3cd7719bfe24258fc48f\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'5d41514857a6157c52c4f204d190035ae1b55c2696ef3cd7719bfe24258fc48f\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'5d41514857a6157c52c4f204d190035ae1b55c2696ef3cd7719bfe24258fc48f\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:52:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:52:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'5d41514857a6157c52c4f204d190035ae1b55c2696ef3cd7719bfe24258fc48f\'
+WHERE `users`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'5d41514857a6157c52c4f204d190035ae1b55c2696ef3cd7719bfe24258fc48f\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:52:45 --> [Caused by] mysqli_sql_exception: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'5d41514857a6157c52c4f204d190035ae1b55c2696ef3cd7719bfe24258fc48f\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'5d41514857a6157c52c4f204d190035ae1b55c2696ef3cd7719bfe24258fc48f\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'5d41514857a6157c52c4f204d190035ae1b55c2696ef3cd7719bfe24258fc48f\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+ERROR - 2026-06-28 16:54:09 --> Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'910a6d592fc30870609e33a24380d6f97541207b86d3881240620a105561e459\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'910a6d592fc30870609e33a24380d6f97541207b86d3881240620a105561e459\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'910a6d592fc30870609e33a24380d6f97541207b86d3881240620a105561e459\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:54:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:54:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'910a6d592fc30870609e33a24380d6f97541207b86d3881240620a105561e459\'
+WHERE `users`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'910a6d592fc30870609e33a24380d6f97541207b86d3881240620a105561e459\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:54:09 --> [Caused by] mysqli_sql_exception: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'910a6d592fc30870609e33a24380d6f97541207b86d3881240620a105561e459\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'910a6d592fc30870609e33a24380d6f97541207b86d3881240620a105561e459\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'910a6d592fc30870609e33a24380d6f97541207b86d3881240620a105561e459\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+ERROR - 2026-06-28 16:55:19 --> Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'50e8d15485318d7ccec40dc5edc8966d2d98e4bf1e50526453b0a4cb22d97f8a\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'50e8d15485318d7ccec40dc5edc8966d2d98e4bf1e50526453b0a4cb22d97f8a\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'50e8d15485318d7ccec40dc5edc8966d2d98e4bf1e50526453b0a4cb22d97f8a\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:55:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:55:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'50e8d15485318d7ccec40dc5edc8966d2d98e4bf1e50526453b0a4cb22d97f8a\'
+WHERE `users`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'50e8d15485318d7ccec40dc5edc8966d2d98e4bf1e50526453b0a4cb22d97f8a\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:55:19 --> [Caused by] mysqli_sql_exception: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'50e8d15485318d7ccec40dc5edc8966d2d98e4bf1e50526453b0a4cb22d97f8a\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'50e8d15485318d7ccec40dc5edc8966d2d98e4bf1e50526453b0a4cb22d97f8a\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'50e8d15485318d7ccec40dc5edc8966d2d98e4bf1e50526453b0a4cb22d97f8a\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+ERROR - 2026-06-28 16:56:57 --> Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'3f2a84eaa6e7e8c53bed37474e26f94c4d17c17c10038cd59794592c4f06b2c0\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'3f2a84eaa6e7e8c53bed37474e26f94c4d17c17c10038cd59794592c4f06b2c0\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'3f2a84eaa6e7e8c53bed37474e26f94c4d17c17c10038cd59794592c4f06b2c0\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:56:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:56:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'3f2a84eaa6e7e8c53bed37474e26f94c4d17c17c10038cd59794592c4f06b2c0\'
+WHERE `users`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'3f2a84eaa6e7e8c53bed37474e26f94c4d17c17c10038cd59794592c4f06b2c0\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 16:56:57 --> [Caused by] mysqli_sql_exception: Unknown column 'token' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `users` SET `token` = \'3f2a84eaa6e7e8c53bed37474e26f94c4d17c17c10038cd59794592c4f06b2c0\'
+WHERE `users`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `token` = \'3f2a84eaa6e7e8c53bed37474e26f94c4d17c17c10038cd59794592c4f06b2c0\'
+WHERE `users`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `token` = \'3f2a84eaa6e7e8c53bed37474e26f94c4d17c17c10038cd59794592c4f06b2c0\'
+WHERE `users`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2519): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `token` = :token:
+WHERE `users`.`id` IN :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(408): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1074): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AuthController.php(38): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\AuthController->login()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+ERROR - 2026-06-28 17:00:32 --> Cannot add or update a child row: a foreign key constraint fails (`e_inventory`.`barang`, CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (:nama_barang:, :stok:, :harga:, :kategori_id:, :supplier_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BarangController.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BarangController->create()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 17:00:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e_inventory`.`barang`, CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`))
+[Method: POST, Route: api/barang]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (:nama_barang:, :stok:, :harga:, :kategori_id:, :supplier_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BarangController.php(50): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BarangController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 17:00:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e_inventory`.`barang`, CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (:nama_barang:, :stok:, :harga:, :kategori_id:, :supplier_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BarangController.php(50): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BarangController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 17:00:32 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`e_inventory`.`barang`, CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (:nama_barang:, :stok:, :harga:, :kategori_id:, :supplier_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BarangController.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BarangController->create()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+ERROR - 2026-06-28 17:00:33 --> Cannot add or update a child row: a foreign key constraint fails (`e_inventory`.`barang`, CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (:nama_barang:, :stok:, :harga:, :kategori_id:, :supplier_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BarangController.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BarangController->create()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 17:00:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e_inventory`.`barang`, CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`))
+[Method: POST, Route: api/barang]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (:nama_barang:, :stok:, :harga:, :kategori_id:, :supplier_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\BarangController.php(50): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BarangController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 17:00:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`e_inventory`.`barang`, CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (:nama_barang:, :stok:, :harga:, :kategori_id:, :supplier_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\BarangController.php(50): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BarangController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+10 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-28 17:00:33 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`e_inventory`.`barang`, CONSTRAINT `barang_ibfk_2` FOREIGN KEY (`supplier_id`) REFERENCES `supplier` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (\'teh pucuk\', 1000, 3500, \'1\', \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2343): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `stok`, `harga`, `kategori_id`, `supplier_id`) VALUES (:nama_barang:, :stok:, :harga:, :kategori_id:, :supplier_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BarangController.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BarangController->create()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\uas_web2\\backend-api\\public\\index.php')
