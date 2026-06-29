@@ -1,4 +1,4 @@
-PROJECT E-INVENTORY 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7aef8c12-b50c-405f-9940-c81448a353bc" />PROJECT E-INVENTORY 
 # 📦 E-Inventory
 
 E-Inventory adalah aplikasi manajemen inventaris barang berbasis web yang dibangun menggunakan **CodeIgniter 4** sebagai REST API dan **Vue.js** sebagai Single Page Application (SPA). Aplikasi ini digunakan untuk mengelola data barang, kategori, dan supplier dengan sistem autentikasi menggunakan token.
@@ -369,10 +369,19 @@ menggunakan Axios Interceptor.
 Tambahkan screenshot aplikasi berikut:
 
 - Login
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f0b1891-1c71-42e7-b1e5-f7fb0b7fbe4e" />
+
 - Dashboard
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3870d08c-c2c8-4294-817f-cb38d8c46b79" />
+
 - Data Barang
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d49f998a-b454-4192-9aa9-bf7969a78cac" />
+
 - Data Kategori
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74b1e941-8561-4404-92dc-3402ee507401" />
+
 - Data Supplier
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/740b91e8-b5cb-4d30-bb44-ada18c4862e1" />
 
 ---
 
