@@ -1,0 +1,501 @@
+/* ===================================================
+   E-Inventory Design System
+   Palet: Slate biru-abu yang sejuk, nyaman di mata
+   =================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Warna utama — biru-slate sejuk, tidak menyilaukan */
+  --primary:       #4A7FA5;
+  --primary-dark:  #35637F;
+  --primary-light: #EBF4FB;
+
+  /* Aksen emerald untuk supplier */
+  --emerald:       #3A9E7E;
+  --emerald-light: #E6F6F1;
+
+  /* Aksen amber untuk barang */
+  --amber:         #D4873A;
+  --amber-light:   #FEF3E4;
+
+  /* Latar belakang & surface */
+  --bg:            #F4F7FA;
+  --surface:       #FFFFFF;
+  --surface-2:     #F0F4F8;
+
+  /* Teks */
+  --text-primary:  #1E2D3D;
+  --text-secondary:#5A6E82;
+  --text-muted:    #8FA5B8;
+
+  /* Border */
+  --border:        #D8E4EE;
+  --border-focus:  #4A7FA5;
+
+  /* Status */
+  --danger:        #D95F5F;
+  --danger-light:  #FDEAEA;
+  --warning:       #E0A030;
+  --success:       #3A9E7E;
+
+  /* Bayangan */
+  --shadow-sm:  0 1px 4px rgba(30,45,61,0.07);
+  --shadow-md:  0 4px 16px rgba(30,45,61,0.10);
+  --shadow-lg:  0 8px 32px rgba(30,45,61,0.12);
+
+  /* Border radius */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── HEADER ─────────────────────────────────────── */
+.inv-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.inv-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.inv-header-brand .brand-icon {
+  width: 34px;
+  height: 34px;
+  background: var(--primary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+}
+
+.inv-header-brand h1 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+
+.inv-header-brand span {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* ─── LAYOUT ─────────────────────────────────────── */
+.inv-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ─── PAGE TITLE ──────────────────────────────────── */
+.inv-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.inv-page-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.4px;
+}
+
+.inv-page-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ─── KARTU STATISTIK ────────────────────────────── */
+.inv-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.inv-stat-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.inv-stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+.inv-stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.inv-stat-icon.blue   { background: var(--primary-light); }
+.inv-stat-icon.green  { background: var(--emerald-light); }
+.inv-stat-icon.amber  { background: var(--amber-light); }
+
+.inv-stat-info h3 {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.inv-stat-info .stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+/* ─── MENU KARTU ─────────────────────────────────── */
+.inv-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.inv-menu-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.inv-menu-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
+.inv-menu-card .menu-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.inv-menu-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.inv-menu-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.inv-menu-card .menu-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.inv-menu-card .menu-link:hover { opacity: 0.85; }
+
+/* ─── TABEL ──────────────────────────────────────── */
+.inv-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.inv-table-wrapper { overflow-x: auto; }
+
+table.inv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+table.inv-table thead tr {
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+}
+
+table.inv-table thead th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+table.inv-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+table.inv-table tbody tr:last-child { border-bottom: none; }
+table.inv-table tbody tr:hover { background: var(--surface-2); }
+
+table.inv-table tbody td {
+  padding: 0.85rem 1rem;
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.inv-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.inv-badge.blue  { background: var(--primary-light); color: var(--primary); }
+.inv-badge.green { background: var(--emerald-light); color: var(--emerald); }
+
+/* ─── TOMBOL ─────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.15s, transform 0.1s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:hover { opacity: 0.88; }
+.btn:active { transform: scale(0.97); }
+
+.btn-primary  { background: var(--primary); color: white; }
+.btn-success  { background: var(--success); color: white; }
+.btn-warning  { background: var(--warning); color: white; }
+.btn-danger   { background: var(--danger);  color: white; }
+.btn-ghost    { background: var(--surface-2); color: var(--text-secondary); border: 1px solid var(--border); }
+.btn-sm       { padding: 0.35rem 0.75rem; font-size: 0.78rem; }
+
+.btn-logout {
+  background: var(--danger-light);
+  color: var(--danger);
+  border: 1px solid #F5C5C5;
+}
+.btn-logout:hover { background: var(--danger); color: white; }
+
+/* ─── FORM / INPUT ───────────────────────────────── */
+.inv-input, .inv-select {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-family: inherit;
+  color: var(--text-primary);
+  background: var(--surface);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  outline: none;
+}
+.inv-input::placeholder { color: var(--text-muted); }
+.inv-input:focus, .inv-select:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(74,127,165,0.15);
+}
+
+.inv-form-group { margin-bottom: 0.9rem; }
+.inv-form-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.35rem;
+}
+
+/* ─── MODAL ──────────────────────────────────────── */
+.inv-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 35, 50, 0.45);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  padding: 1rem;
+}
+
+.inv-modal {
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 440px;
+  padding: 2rem;
+}
+
+.inv-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.inv-modal-header h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.inv-modal-header .modal-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: var(--surface-2);
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.inv-modal-header .modal-close:hover { background: var(--border); }
+
+.inv-modal-footer {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* ─── HALAMAN LOGIN ──────────────────────────────── */
+.inv-login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #EBF4FB 0%, #F4F7FA 60%, #E6F6F1 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-login-topbar {
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.inv-login-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.inv-login-card {
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid var(--border);
+}
+
+.inv-login-card .login-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--primary-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.inv-login-card h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.inv-login-card .login-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+}
+
+/* ─── BACK LINK ──────────────────────────────────── */
+.inv-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.inv-back:hover { color: var(--primary); }
+
+/* ─── EMPTY STATE ────────────────────────────────── */
+.inv-empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--text-muted);
+}
+.inv-empty .empty-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.inv-empty p { font-size: 0.9rem; }
+
+/* ─── RESPONSIVE ─────────────────────────────────── */
+@media (max-width: 768px) {
+  .inv-stats, .inv-menu-grid { grid-template-columns: 1fr; }
+  .inv-main { padding: 1rem; }
+  .inv-header { padding: 0 1rem; }
+}
