@@ -1,4 +1,3 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7aef8c12-b50c-405f-9940-c81448a353bc" />PROJECT E-INVENTORY 
 # 📦 E-Inventory
 
 E-Inventory adalah aplikasi manajemen inventaris barang berbasis web yang dibangun menggunakan **CodeIgniter 4** sebagai REST API dan **Vue.js** sebagai Single Page Application (SPA). Aplikasi ini digunakan untuk mengelola data barang, kategori, dan supplier dengan sistem autentikasi menggunakan token.
