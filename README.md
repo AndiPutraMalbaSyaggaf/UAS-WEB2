@@ -128,7 +128,7 @@ UAS_WEB2/
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/e-inventory.git
+git clone https://github.com/AndiPutraMalbaSyaggaf/UAS-WEB2.git
 ```
 
 ---
