@@ -1,4 +1,3 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b356f204-23bb-44b0-b095-84d6d8c2a496" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9c14f39f-20d0-4532-9e36-d373f2fff1db" /># UAS-WEB2
 PROJECT E-INVENTORY 
 # 📦 E-Inventory
 
