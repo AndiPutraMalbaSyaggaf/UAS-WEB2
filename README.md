@@ -398,6 +398,6 @@ Universitas : **Universitas Pelita Bangsa**
 
 Tahun : **2026**
 
-link video : ****
+link video : **https://youtu.be/7j3nfTtn98c**
 
 ---
