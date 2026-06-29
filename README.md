@@ -1,4 +1,4 @@
-# UAS-WEB2
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b356f204-23bb-44b0-b095-84d6d8c2a496" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9c14f39f-20d0-4532-9e36-d373f2fff1db" /># UAS-WEB2
 PROJECT E-INVENTORY 
 # 📦 E-Inventory
 
@@ -313,6 +313,7 @@ Response
 | username | varchar |
 | password | varchar |
 | token | varchar |
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b20c41c9-7aee-4c64-ad9a-759b6adf869d" />
 
 ---
 
@@ -320,6 +321,7 @@ Response
 
 - id
 - nama_kategori
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/25ff20d6-ebb2-45a1-87b9-739a682379b6" />
 
 ---
 
@@ -329,6 +331,7 @@ Response
 - nama_supplier
 - alamat
 - telepon
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4f8dadd4-cb6e-48ec-8f52-382547503342" />
 
 ---
 
@@ -340,6 +343,7 @@ Response
 - supplier_id
 - stok
 - harga
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3c45bfc2-7b1e-4a89-ab43-14952b4f2161" />
 
 ---
 
